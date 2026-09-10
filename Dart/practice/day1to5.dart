@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 /* 
 
 Level 1 (Warm-up)
@@ -14,7 +16,7 @@ Division
 
 
  */
-import 'dart:io';
+// import 'dart:io';
 
 List<dynamic> level1q1(int a, int b) {
   int sum = a + b;
@@ -67,7 +69,7 @@ Else Fail
    */
 
 dynamic level1q3(int marks) {
-  String grade;
+  var grade;
   if (marks >= 90) {
     return grade = 'A';
   } else if (marks >= 80) {

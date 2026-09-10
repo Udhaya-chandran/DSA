@@ -230,4 +230,77 @@ Constructor
 ↓
 
 this
+
+*/
+
+// import 'dart:io';
+
+class Mobile {
+  //These are called properties (or fields).
+  String brand = '';
+  String model = '';
+  double price = 0.0;
+
+  //Functions inside a class are called methods.
+  void call() {
+    print('calling ....');
+  }
+
+  void camera() {
+    print('Taking photo .....');
+  }
+}
+
+//student class
+class Student {
+  String name = '';
+  int age = 0;
+  double mark = 0.0;
+
+  //constructor
+  Student(this.name, this.age, this.mark);
+
+  void display() {
+    print(name);
+    print(age);
+    print(mark);
+  }
+}
+
+void main() {
+  //Now phone is an object.
+  Mobile phone = Mobile();
+
+  phone.brand = "Red mi";
+  phone.model = "8";
+  phone.price = 20000;
+
+  print(phone.brand);
+  print('${phone.model} , ${phone.price}');
+
+  //Call Methods
+  phone.call();
+  phone.camera();
+
+  //accsing student class
+  //Student s1 = Student();
+
+  // s1.name = 'Udhaya';
+  // s1.age = 24;
+  // s1.mark = 588;
+
+  // s1.display();
+
+  /* Constructor ⭐⭐⭐
+  
+  Instead of writing
+    s1.name = "Udhay";
+    s1.age = 23;
+  every time... use constructor 
+
  */
+
+  // using constructor
+  Student s2 = Student('pavi', 24, 588);
+  s2.display();
+}
